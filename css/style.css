@@ -1,0 +1,245 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* font-family: 'Bona Nova', serif; */
+    font-family: 'Roboto', sans-serif;
+    background-color: #313131;
+    color: white;
+}
+
+.container{
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.head{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.muka-main-text{
+    font-size: 4em;
+    font-family: 'Bona Nova', serif;
+}
+
+.basket{
+    display: flex;
+    align-items: center;
+}
+
+.basket p{
+    font-size: 1.3em;
+}
+
+ /* Кнопки */
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.navigation button{
+    width: 195px;
+    border: solid 4px white;
+    background-color: #313131;
+    color: white;
+    padding: 5px 0px;
+    font-size: 1.5em;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.navigation button:hover{
+    width: 195px;
+    border: solid 4px white;
+    background-color: white;
+    color: #313131;
+    padding: 5px 0px;
+    font-size: 1.5em;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+ /* Карточки-основная тема */
+
+.box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 75px;
+    flex-wrap: wrap;
+    margin-top: 75px;
+}
+
+.kartochka-bludo{
+    border: solid 1px #000;
+    width: 350px;
+    height: 500px;
+    padding-top: 15px;
+    
+}
+
+.fotka-bludo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fotka-bludo p{
+    padding-top: 20px;
+    font-size: 1.3em;
+}
+
+
+
+.gramm-and-cost{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    font-size: 1.3em;
+    margin-top: 15px;
+    margin-bottom: 60px;
+}
+
+.cost{
+    font-size: 1.2em;
+}
+
+.kolvo-button-zakaz{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    font-size: 1.5em;
+    /* margin-bottom: 45px; */
+}
+
+.kolvo-button-zakaz button{
+    background-color: #FF8A00;
+    color: #000;
+    border: solid 1px #FF8A00;
+    border-radius: 8px;
+    padding: 18px 16px;
+    font-size: 1.1em;
+    transition: 0.2s;
+}
+
+.kolvo-button-zakaz button:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.vibor{
+    padding-left: 10px;
+    font-size: 1.3em;
+    margin-top: 40px;
+}
+
+#fix4{
+    margin-top: 15px;
+}
+
+#fix6{
+    margin-top: 15px;
+}
+
+  /* Подвал сайта */
+
+.footer-opisnie{
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+.footer-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.footer-buttons button{
+    font-size: 2em;
+    border: solid 2px white;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #313131;
+    color: white;
+    transition: 0.2s;
+}
+
+.footer-buttons button:hover{
+    border: solid 2px #FF8A00;
+    cursor: pointer;
+}
+
+    /* Адаптация */
+
+@media screen and (max-width: 1600px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px 10px;
+    }
+
+    .box{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 75px;
+        flex-wrap: wrap;
+        margin-top: 75px;
+    }
+
+}
+
+@media screen and (max-width: 1030px) {
+    .navigation{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    }
+    
+    .navigation button{
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+
+    .logo{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 586px) {
+    .footer-buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    
+    .footer-buttons button{
+        font-size: 2em;
+        border: solid 2px white;
+        padding: 15px;
+        border-radius: 5px;
+        background-color: #313131;
+        color: white;
+        transition: 0.2s;
+        margin-bottom: 20px;
+    }
+    
+}
