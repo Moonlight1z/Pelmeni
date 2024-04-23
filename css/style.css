@@ -17,10 +17,10 @@ body{
 }
 
 .head{
-    margin-top: 15px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 15px;
 }
 
 .muka-main-text{
